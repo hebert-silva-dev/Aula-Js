@@ -104,27 +104,60 @@
 //     alert(`Valor final com desconto: R$ ${resultado}`);
 // }
 
-const n1 = Number(prompt("Digite o Primeiro valor: "));
-const n2 = Number(prompt("Digite o Segundo valor: "));
-const n3 = Number(prompt("Digite o Terceiro valor: "));
+// const n1 = Number(prompt("Digite o Primeiro valor: "));
+// const n2 = Number(prompt("Digite o Segundo valor: "));
+// const n3 = Number(prompt("Digite o Terceiro valor: "));
 
-if (Number.isNaN(n1) || Number.isNaN(n2) || Number.isNaN(n3)) {
-    alert("Valor inválido.");
-}else {
-    let valorFinal = n1;
-    if(n2 > valorFinal){
-        valorFinal = n2;
-    }
-    if (n3 > valorFinal) {
-        valorFinal = n3;
-    }
-    alert(`Valor final ${valorFinal}.`);
+// if (Number.isNaN(n1) || Number.isNaN(n2) || Number.isNaN(n3)) {
+//     alert("Valor inválido.");
+// }else {
+//     let valorFinal = n1;
+//     if(n2 > valorFinal){
+//         valorFinal = n2;
+//     }
+//     if (n3 > valorFinal) {
+//         valorFinal = n3;
+//     }
+//     alert(`Valor final ${valorFinal}.`);
 
-    // if ( n1 > n2 && n1 > n3) {
-    //     alert(`Valor final ${n1}.`);
-    // }else if (n2 > n1 && n2 > n3) {
-    //     alert(`Valor final ${n2}.`);
-    // }else{
-    //     alert(`Valor final ${n3}.`);
-    // }
-}
+// if ( n1 > n2 && n1 > n3) {
+//     alert(`Valor final ${n1}.`);
+// }else if (n2 > n1 && n2 > n3) {
+//     alert(`Valor final ${n2}.`);
+// }else{
+//     alert(`Valor final ${n3}.`);
+// }
+// }
+
+//Peça dois números e uma operação (+, -, *, /). Use switch para calcular, com default para operações inválidas e checagem de divisão por zero.
+// const n1 = Number(prompt("Digite o Primeiro numero para a operação: "));
+// const n2 = Number(prompt("Digite o Segundo e ultimo numero para a operação: "));
+// const op = String(prompt("Digite a operalção desejada (+, -, *, /): "));
+// let resultado;
+
+// if (Number.isNaN(n1) || Number.isNaN(n2) || op != String) {
+//     alert("Informações inseridas estão inválidas.");
+// } else {
+//     switch (resultado) {
+//         case "+":
+//             resultado = n1 + n2
+//             break;
+//         case "-":
+//             resultado = n1 - n2
+//             break;
+//         case "*":
+//             resultado = n1 * n2
+//             break;
+//         case "/":
+//             if (n2 === 0) {
+//                 alert("Operação invalida.");
+//             }else{
+//                 resultado = n1 / n2
+//             }
+//             break;
+//         default:{
+//             alert("Operação inválida");
+//         }
+//     }
+//     alert(`Resultado: ${resultado}.`);
+// }

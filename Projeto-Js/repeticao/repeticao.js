@@ -62,13 +62,21 @@
 //     alert(`${chave} : ${pessoa[chave]}.`);
 // }
 
-for (let line = 1; line <= 3; line++) {
-    let texto = "";
-    for (let colum = 1; colum <= line; colum++) {
-        texto += " * ";
-        if(line > 1){
-            console.log();
-        }
-    }
-    console.log(texto);
-}
+
+// for (let line = 3; line <= 1; line--) {
+//     let texto = "";
+//     for (let colum = 3; colum <= line; colum--) {
+//         texto += " * ";
+//     }
+//     console.log(texto);
+// }
+
+// for (let line = 1; line <= 3; line++) {
+//     let texto = "";
+//     for (let colum = 1; colum <= line; colum++) {
+//         texto += " * ";
+//     }
+//     console.log(texto);
+// }
+
+

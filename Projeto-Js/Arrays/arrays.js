@@ -70,3 +70,94 @@
 
 // delete aluno.cidade;
 // console.log(aluno);
+
+//Filter, Map, Find e Reduce
+
+// function dobro(n) {
+//     return n * 2;
+// }
+
+// const dobroArrow = (n) => {
+//     return n * 2;
+// }
+
+// const dobroCurto = n => n * 2;
+
+const lucas = { name: "Lucas", lastName: "Garcez", age: 20 };
+const maria = { name: "Maria", lastName: "Oliveira", age: 17 };
+const joao = { name: "João", lastName: "Silva", age: 18 };
+const ana = { name: "Ana", lastName: "Santos", age: 22 };
+
+const people = [lucas, maria, joao, ana];
+
+// //FILTER
+
+// console.log("=== FILTER ===");
+
+// const maiores = people.filter((value, index, array) => {
+//     console.log("Index: ", index + 1);
+//     console.log("Value: ", value.name);
+//     console.log("---------------------");
+//     return value.age >= 18;
+// })
+
+// console.log("Resultado FILTER: " , maiores);
+
+//MAP
+
+// console.log("====== MAP ======");
+
+// const nomes = people.map((value, index, array) => {
+//     console.log("Index: ", index + 1);
+//     console.log("Value: ", value.name);
+//     console.log("---------------------");
+//     return value.name;
+// })
+
+// console.log("Resultado MAP: ", nomes);
+
+
+//FIND
+
+// console.log("====== FIND ======");
+
+// const mariaEncontrada = people.find((value, index, array) => {
+//     console.log("Index: ", index + 1);
+//     console.log("Value: ", value.name);
+//     return value.name === "Maria";
+// })
+
+// console.log("Resultado do FIND: ", mariaEncontrada);
+
+// const pedro = people.find( p => p.name === "Pedro");
+// if(pedro === undefined){
+//     console.log("Pessoa não encontrada.");
+// }
+
+// console.log("===== REDUCE =====");
+
+// array.reduce((acumulador, elementoAtual, indice, arrayOriginal) => {
+    
+// // }, valorInicial);
+
+// const somaIdade = people.reduce((acc, value, index, array)=> {
+//     console.log("Index: ", index + 1);
+//     console.log("Value: ", value.name , value.age);
+//     console.log("Acumulador antes: ", acc);
+//     return acc + value.age;
+// },0);
+
+// console.log("Resultado Reduce: " , somaIdade);
+
+// const nomesMaiores = people
+// .filter( p => p.age >= 18)
+// .map( p => p.name.toUpperCase());
+
+// console.log(nomesMaiores);
+
+// const somaMiores = people
+// .filter( p => p.age >= 18)
+// .reduce((acc , p) => acc + p.age, 0);
+
+// console.log(somaMiores);
+

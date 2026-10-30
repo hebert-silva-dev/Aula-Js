@@ -83,22 +83,22 @@
 
 // const dobroCurto = n => n * 2;
 
-const lucas = { name: "Lucas", lastName: "Garcez", age: 20 };
-const maria = { name: "Maria", lastName: "Oliveira", age: 17 };
-const joao = { name: "João", lastName: "Silva", age: 18 };
-const ana = { name: "Ana", lastName: "Santos", age: 22 };
+const lucas = { name: "Lucas", lastName: "Garcez", age: 20 };           //obj Lucas
+const maria = { name: "Maria", lastName: "Oliveira", age: 17 };         //obj Maria
+const joao = { name: "João", lastName: "Silva", age: 18 };              //obj João
+const ana = { name: "Ana", lastName: "Santos", age: 22 };               //obj Ana
 
-const people = [lucas, maria, joao, ana];
+const people = [lucas, maria, joao, ana];                               //Formação de um Array de objs
 
 // //FILTER
 
 // console.log("=== FILTER ===");
 
-// const maiores = people.filter((value, index, array) => {
-//     console.log("Index: ", index + 1);
-//     console.log("Value: ", value.name);
-//     console.log("---------------------");
-//     return value.age >= 18;
+// const maiores = people.filter((value, index, array) => {          // //Iniciação do filter deve ser com funções anonimas. A variavel 'maiores' recebe o array people
+//     console.log("Index: ", index + 1);                            // //junto da função 'filter' que possue 3 atributos que são value, index e array
+//     console.log("Value: ", value.name);                           // //O value determina o atributo desejado do obj que nesse caso é o nome
+//     console.log("---------------------");                         // //O index determina a nova posição do arreay construido a partir do original
+//     return value.age >= 18;                                       // //
 // })
 
 // console.log("Resultado FILTER: " , maiores);
